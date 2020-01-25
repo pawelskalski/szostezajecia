@@ -67,7 +67,7 @@ namespace lab6
 
             List<Osoba> osoby = Enumerable.Range(1, 100).
                 Select(x => new Osoba(intGenerator.Generate().Value, nameGenerator.Generate(), lastnameGenerator.Generate())).
-                OrderBy(x => x.nazwisko).
+                OrderBy(x => x.imie).
                 ThenBy(x => x.nazwisko).
                 ToList();
 
